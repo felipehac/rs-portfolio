@@ -1,0 +1,387 @@
+/* #region Global */
+/* #region Colors */
+:root {
+  --body-bg-color: #22212c;
+  --text-color: #837e9f;
+  --bg-cards: #302f3d;
+  --bg-techs: #cb92b1;
+  --stack-javascript: #e7de79;
+  --stack-css: #563d7c;
+  --stack-csharp: #178600;
+}
+/* #endregion Colors */
+
+/* #region Generic */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--body-bg-color);
+
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 300;
+  color: var(--text-color);
+}
+
+body > footer {
+  text-align: center;
+  padding: 1.25rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  margin: auto;
+  width: min(1440px, 90vw);
+  padding: 2.5rem;
+}
+
+.content > header {
+  max-width: 21.75rem;
+}
+
+.content > main {
+  max-width: 59.5rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 2rem;
+}
+
+.col {
+  max-width: 100%;
+  flex: 1;
+}
+
+.profile-photo {
+  max-width: 8rem;
+  margin: auto;
+}
+
+.text-light {
+  font-weight: 300;
+}
+
+/* #region Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #11171a;
+  border-radius: 10px;
+}
+/* #endregion Scrollbar */
+
+/* See: https://codepen.io/sosuke/pen/Pjoqqp*/
+img[src*=".svg"] {
+  filter: invert(55%) sepia(23%) saturate(381%) hue-rotate(209deg)
+    brightness(88%) contrast(87%);
+}
+/* #endregion Generic */
+
+/* #region Links & Buttons */
+a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #a2a3c1;
+}
+/* #endregion Links & Buttons */
+
+/* #region Acessibility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+/* #endregion Acessibility */
+
+/* #endregion Global */
+
+/* #region Card */
+.card {
+  width: 100%;
+  background-color: var(--bg-cards);
+  padding: 2rem;
+  border-radius: 1.25rem;
+  margin-bottom: 2rem;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+header section:last-child .card {
+  margin-bottom: 0;
+}
+
+.card-content {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  /* overflow: hidden; */
+  /* text-overflow: ellipsis; */
+  /* white-space: nowrap; */
+}
+
+.card header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mb-s {
+  margin-bottom: 1.25rem;
+}
+
+.card .content-list {
+  margin-left: 2.5rem;
+}
+
+.card .content-list li {
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+}
+
+.card .content-list li:last-child {
+  margin-bottom: 0;
+}
+/* #endregion Card */
+
+/* #region Profile */
+#profile h1 {
+  font-weight: bold;
+  font-size: 1.4375rem;
+  line-height: 1.8125rem;
+  margin-top: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+#profile p {
+  margin-bottom: 0.8rem;
+}
+
+#profile img {
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid #00ff00;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+/* #endregion Profile */
+
+/* #region Info */
+#info ul li {
+  font-size: 0.8125rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  list-style: none;
+  line-height: 2.75rem;
+}
+/* #endregion Info */
+
+/* #region Stack */
+#stack .chips {
+  margin: 0 -0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.937rem;
+}
+
+#stack .chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.375rem;
+  height: 1.5rem;
+  background-color: var(--bg-techs);
+  text-transform: uppercase;
+  font-size: 0.625rem;
+  font-weight: bold;
+  color: black;
+  border-radius: 1.875rem;
+}
+
+/* #endregion Stack */
+
+/* #region Projects */
+.card.project {
+  font-size: 0.875rem;
+}
+
+.card.project header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card.project header h3 {
+  font-size: 1rem;
+}
+
+.card.project header img {
+  width: 1.25rem;
+}
+
+.card.project p {
+  margin: 1.625rem 0;
+}
+
+.card.project footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card.project .stats {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.card.project .stats img {
+  width: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+.card.project .stats span {
+  margin-right: 1rem;
+}
+
+.card.project i.circle {
+  width: 0.9375rem;
+  height: 0.9375rem;
+  border-radius: 50%;
+  border: 2px solid var(--text-color);
+}
+
+.stack-javascript {
+  background-color: var(--stack-javascript);
+}
+
+.stack-css {
+  background-color: var(--stack-css);
+}
+
+.stack-csharp {
+  background-color: var(--stack-csharp);
+}
+
+.card.project .language {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+/* #endregion Projects */
+
+/* #region Posts */
+.card.post {
+  display: flex;
+}
+
+.card.post aside {
+  margin-right: 1.25rem;
+}
+
+.card.post .post-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card.post .post-content header {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 1.2rem;
+}
+
+.card.post .post-content header h3 {
+  font-size: 1.125rem;
+}
+
+.card.post .post-content header p {
+  font-size: 0.875rem;
+}
+
+.card.post .post-thumbnail img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.card.post .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  line-height: 0rem;
+}
+/* #endregion Posts */
+
+/* #region Responsive */
+@media screen and (max-width: 800px) {
+  .content {
+    gap: 0;
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+
+  .content > header,
+  .content > main {
+    max-width: 100vw;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  header section:last-child .card {
+    margin-bottom: 2rem;
+  }
+
+  .card-content {
+    overflow: auto;
+  }
+
+  .card.post aside {
+    width: 0;
+    margin: 0;
+    height: 0;
+    visibility: hidden;
+  }
+
+  #stack .chips {
+    margin: 0;
+  }
+
+  .card header a {
+    margin: 1rem 0;
+  }
+}
+/* #endregion Responsive */
