@@ -28,7 +28,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O projeto foi desenvolvido como forma de consolidar os conhecimentos obtidos por meio dos cursos da Rocketseat.
+O projeto foi desenvolvido como forma de consolidar os conhecimentos obtidos por meio do curso Discover da Rocketseat.
 
 O projeto foi desenvolvido em HTML, CSS e JavaScript e consome a API do GitHub para popular os repositórios da página.
 
