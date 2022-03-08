@@ -8,6 +8,8 @@
   --stack-javascript: #e7de79;
   --stack-css: #563d7c;
   --stack-csharp: #178600;
+  --stack-html: #e34c26;
+  --stack-python: #3572a5;
 }
 /* #endregion Colors */
 
@@ -232,6 +234,7 @@ header section:last-child .card {
 
 /* #region Projects */
 .card.project {
+  height: calc(100% - 2rem);
   font-size: 0.875rem;
 }
 
@@ -289,8 +292,16 @@ header section:last-child .card {
   background-color: var(--stack-css);
 }
 
-.stack-csharp {
+.stack-c\# {
   background-color: var(--stack-csharp);
+}
+
+.stack-html {
+  background-color: var(--stack-html);
+}
+
+.stack-python {
+  background-color: var(--stack-python);
 }
 
 .card.project .language {
