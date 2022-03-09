@@ -1,9 +1,9 @@
 <h1 align="center">
-  Felipe Cardoso - Portfólio
+  Felipe Cardoso - Portfolio
 </h1>
 
 <p align="center">
-  <a href="#-tecnologias">Tecnologias</a> | <a href="#-projeto">Projeto</a> | <a href="#-layout">Layout</a> | <a href="#-licença">Licença</a>
+  <a href="#-stack">Stack</a> | <a href="#-project">Project</a> | <a href="#-layout">Layout</a> | <a href="#-license">License</a>
 </p>
 
 <p align="center">
@@ -12,32 +12,32 @@
 
 <a href="https://felipehac.github.io/rs-portfolio/">
 <p align="center">
-  <img alt="Demonstração do Portfólio" src=".github/showcase.png" width="100%">
+  <img alt="Portfolio Live Demo" src=".github/showcase.png" width="100%">
 </p>
 
-<p align="center"><strong>VER DEMO</strong></p>
+<p align="center"><strong>LIVE DEMO</strong></p>
 </a>
 
-## 🚀 Tecnologias
+## 🚀 Stack
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+This project was developed with the following stack:
 
 - HTML
 - CSS
 - JavaScript
 
-## 💻 Projeto
+## 💻 Project
 
-O projeto foi desenvolvido como forma de consolidar os conhecimentos obtidos por meio do curso Discover da Rocketseat.
+The project was developed as a way to consolidate the knowledge obtained through Rocketseat's Discover course.
 
-O projeto foi desenvolvido em HTML, CSS e JavaScript e consome a API do GitHub para popular os repositórios da página.
+The project was developed in HTML, CSS and JavaScript and uses the GitHub API to populate the repositories section.
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/L6fCiWtOgXCfslQdezqQeF/DD-Portfolio). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+You can view the project layout through [this link](https://www.figma.com/file/L6fCiWtOgXCfslQdezqQeF/DD-Portfolio). You need an account on [Figma](https://figma.com) to access it.
 
-## 📝 Licença
+## 📝 License
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+This project is under the MIT license. See the file [LICENSE](LICENSE.md) for more details.
 
 ---
